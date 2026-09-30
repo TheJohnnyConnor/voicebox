@@ -17,7 +17,7 @@ services:
       # Bind-mount for generated audio (customize the host path as needed)
       # Host side:      ./output/
       # Container side: /app/data/generations/
-      - ./output:/app/data/generations
+      #- ./output:/app/data/generations
 
       # Named volume for profiles, DB, cache (persists across container restarts)
       - voicebox-data:/app/data
