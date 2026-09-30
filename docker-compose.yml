@@ -42,6 +42,14 @@ services:
           cpus: '4'
           memory: 8G
 
+    devices:
+      - /dev/kfd
+      - /dev/dri
+
+    group_add:
+      - render
+      - video
+
 networks:
   voicebox-net:
     driver: bridge
