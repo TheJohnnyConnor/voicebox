@@ -4,7 +4,11 @@
 
 services:
   voicebox:
-    build: .
+    build:
+      context: .
+      args:
+        PYTORCH_VARIANT: rocm
+        ROCM_VERSION: "6.3"
     container_name: voicebox
     restart: unless-stopped
 
