@@ -30,7 +30,7 @@ services:
       #   RDNA2 / RX 6000 series:              10.3.0
       #   RDNA1 / RX 5000 series:              10.1.0
       #   Vega / GCN5:                          9.0.0
-      - HSA_OVERRIDE_GFX_VERSION=${HSA_OVERRIDE_GFX_VERSION:-}
+      #- HSA_OVERRIDE_GFX_VERSION=${HSA_OVERRIDE_GFX_VERSION:-}
 
       # Tune the ROCm memory allocator
       - PYTORCH_HIP_ALLOC_CONF=garbage_collection_threshold:0.8,max_split_size_mb:512
