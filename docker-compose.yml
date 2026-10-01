@@ -32,7 +32,7 @@ services:
     environment:
       - LOG_LEVEL=info
       - NUMBA_CACHE_DIR=/tmp/numba_cache
-      - HSA_OVERRIDE_GFX_VERSION=
+      #- HSA_OVERRIDE_GFX_VERSION=
       - PYTORCH_HIP_ALLOC_CONF=garbage_collection_threshold:0.8,max_split_size_mb:512
       - MIOPEN_USER_DB_PATH=/app/data/cache/miopen_db
       - MIOPEN_CUSTOM_CACHE_DIR=/app/data/cache/miopen_cache
